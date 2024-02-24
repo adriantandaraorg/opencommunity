@@ -1,4 +1,11 @@
+import {
+  motion,
+  useAnimation,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import { reviews } from "@/utils";
+import { useState } from "react";
 
 export function Reviews() {
   return (
@@ -17,7 +24,10 @@ export function Reviews() {
       {/* Reviews Cards */}
       <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
         {reviews.map(({ avatar, description, name, role }, index) => (
-          <div className="flex flex-col justify-start items-start gap-3 bg-zinc-800/90 p-4 w-[245px]">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="flex flex-col justify-start items-start gap-3 cursor-crosshair bg-zinc-800/90 p-4 w-[245px] rounded-[8px]"
+          >
             <img src={avatar} alt={`avatar_${index}`} className="w-[15%]" />
             <p className="text-zinc-400 text-xs text-start font-normal w-full">
               {description}
@@ -32,7 +42,7 @@ export function Reviews() {
                 {role}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

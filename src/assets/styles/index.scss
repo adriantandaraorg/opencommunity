@@ -16,3 +16,7 @@ $background: #151719;
 body {
   background-color: $background;
 }
+
+::selection {
+  @apply bg-primary text-white;
+}

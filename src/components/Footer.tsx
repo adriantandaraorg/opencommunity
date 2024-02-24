@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <div className="flex flex-col justify-center items-center mt-10">
       {/* Footer Subscribe */}
-      <div className="lg:flex justify-between items-center gap-4 bg-primaryLight/80 lg:w-[815px] w-[50%] p-10">
+      <div className="lg:flex justify-between items-center gap-4 bg-primaryLight/80 lg:w-[815px] w-[50%] p-10 rounded-[8px]">
         {/* Footer Subscribe Title */}
         <div className="flex flex-col justify-start lg:mb-0 mb-4 items-start gap-1">
           <h1 className="text-white text-start text-2xl font-bold">
@@ -21,7 +21,7 @@ export function Footer() {
           <input
             type="text"
             placeholder="Your best email..."
-            className="border border-primaryLight sm:mb-0 mb-2 bg-primary/40 focus:bg-primary px-2 py-2 text-zinc-400 placeholder:text-zinc-400 text-start text-xs w-full transition"
+            className="border border-primaryLight sm:mb-0 mb-2 bg-primary/40 focus:bg-primary  px-2 py-2 text-zinc-400 placeholder:text-zinc-400 text-start text-xs w-full transition"
           />
           <button className="border-none bg-white hover:bg-white/80 text-center text-black text-xs w-[100px] p-2 rounded-sm transition">
             Subscribe

@@ -1,5 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 import { ilustrations } from "@/utils";
+import { motion } from "framer-motion";
 
 export function Body() {
   return (
@@ -29,10 +30,11 @@ export function Body() {
               index % 2 === 0 ? "lg:flex-row-reverse" : null
             }`}
           >
-            <img
+            <motion.img
               src={image}
+              whileHover={{ scale: 1.02 }}
               alt={`ilustration_${index + 1}`}
-              className="lg:w-[50%] w-[30%]"
+              className="lg:w-[50%] w-[30%] rounded-[8px] cursor-crosshair"
             />
             <div className="flex flex-col justify-start items-start">
               <h2 className="text-primaryLight text-xs font-thin">

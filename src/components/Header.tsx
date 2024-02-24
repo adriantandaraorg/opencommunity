@@ -17,10 +17,10 @@ export function Header() {
 
         {/* Header Buttons */}
         <div className="flex justify-center items-center gap-2 mt-2">
-          <button className="border-none bg-primary hover:bg-primary/80 text-white text-sm p-2 w-32 rounded-sm transition">
+          <button className="border-none bg-primary hover:bg-primary/80 text-white text-sm p-2 w-32 rounded-md transition">
             Start free trial
           </button>
-          <button className="border-none bg-secondary hover:bg-secondary/80 text-white text-sm p-2 w-32 rounded-sm transition">
+          <button className="border-none bg-secondary hover:bg-secondary/80 text-white text-sm p-2 w-32 rounded-md transition">
             Learn more
           </button>
         </div>
