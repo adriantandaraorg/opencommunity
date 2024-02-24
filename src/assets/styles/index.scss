@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./cursor.scss";
+
+$background: #151719;
+
+* {
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+body {
+  background-color: $background;
+}
