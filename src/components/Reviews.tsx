@@ -1,11 +1,5 @@
-import {
-  motion,
-  useAnimation,
-  useMotionValue,
-  useTransform,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import { reviews } from "@/utils";
-import { useState } from "react";
 
 export function Reviews() {
   return (
