@@ -2,7 +2,7 @@ import logo from "@/assets/images/logo.png";
 
 export function Navbar() {
   return (
-    <div className="flex flex-col justify-center items-center sticky top-0 p-4 bg-darkPrimary">
+    <div className="flex flex-col justify-center items-center sticky top-0 p-4 bg-darkPrimary z-50">
       <div className="flex justify-between items-center w-3/4">
         <img src={logo} alt="logo_opencommunity" className="w-7" />
         <div className="flex justify-end items-center gap-8">
