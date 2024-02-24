@@ -5,9 +5,9 @@ export function Footer() {
   return (
     <div className="flex flex-col justify-center items-center mt-10">
       {/* Footer Subscribe */}
-      <div className="flex justify-between items-center gap-4 bg-primaryLight/80 w-[50%] p-10">
+      <div className="lg:flex justify-between items-center gap-4 bg-primaryLight/80 lg:w-[815px] w-[50%] p-10">
         {/* Footer Subscribe Title */}
-        <div className="flex flex-col justify-start items-start gap-1">
+        <div className="flex flex-col justify-start lg:mb-0 mb-4 items-start gap-1">
           <h1 className="text-white text-start text-2xl font-bold">
             Stay in the loop
           </h1>
@@ -17,13 +17,13 @@ export function Footer() {
         </div>
 
         {/* Footer Subscribe Search */}
-        <div className="flex justify-end items-center gap-1.5">
+        <div className="sm:flex justify-end items-center gap-1.5">
           <input
             type="text"
             placeholder="Your best email..."
-            className="border border-primaryLight bg-primary/40 focus:bg-primary px-2 py-2 text-zinc-400 placeholder:text-zinc-400 text-start text-xs w-full transition"
+            className="border border-primaryLight sm:mb-0 mb-2 bg-primary/40 focus:bg-primary px-2 py-2 text-zinc-400 placeholder:text-zinc-400 text-start text-xs w-full transition"
           />
-          <button className="border-none bg-white hover:bg-white/80 text-center text-black text-xs w-[45%] p-2 rounded-sm transition">
+          <button className="border-none bg-white hover:bg-white/80 text-center text-black text-xs w-[100px] p-2 rounded-sm transition">
             Subscribe
           </button>
         </div>
@@ -31,11 +31,15 @@ export function Footer() {
 
       {/* Footer Links */}
       <div className="flex flex-col justify-center items-center gap-4 mt-10">
-        <div className="flex justify-between items-center w-[75%]">
+        <div className="sm:flex justify-between items-center sm:w-[75%] w-[300px]">
           {/* Footer Links Info */}
-          <div className="flex flex-col justify-start items-start gap-2">
-            <img src={logo} alt="logo_opencommunity" className="w-[7%]" />
-            <p className="text-zinc-400 text-start text-xs w-1/2">
+          <div className="flex flex-col justify-start sm:mb-0 mb-4 items-start gap-2">
+            <img
+              src={logo}
+              alt="logo_opencommunity"
+              className="w-[7%] sm:flex hidden"
+            />
+            <p className="text-zinc-400 sm:text-start text-center text-xs sm:w-1/2">
               Lorem ipsum is placeholder text commonly used in the graphic,
               print, and publishing industries for previewing layouts and visual
               mockups.
@@ -58,14 +62,14 @@ export function Footer() {
         </div>
       </div>
       {/* Footer Copyright */}
-      <div className="flex justify-between items-center w-1/2 mt-10">
-        <h1 className="text-zinc-400 text-start text-xs">
+      <div className="sm:flex justify-between items-center sm:w-1/2 mt-10">
+        <h1 className="text-zinc-400 text-start text-xs sm:mb-0 mb-4">
           Made by <span className="text-zinc-300 font-medium">Adrian_</span>.
           All right reserved
         </h1>
 
         {/* Footer Copyright Social */}
-        <div className="flex justify-end items-center gap-4">
+        <div className="flex sm:justify-end justify-center items-center sm:gap-4 gap-2">
           {socials.map((social, index) => (
             <div
               key={index}

@@ -15,9 +15,9 @@ export function Reviews() {
       </div>
 
       {/* Reviews Cards */}
-      <div className="flex justify-center items-center gap-10 mt-10">
+      <div className="flex flex-wrap justify-center items-center gap-10 mt-10">
         {reviews.map(({ avatar, description, name, role }, index) => (
-          <div className="flex flex-col justify-start items-start gap-3 bg-zinc-800/90 p-4 w-[15%]">
+          <div className="flex flex-col justify-start items-start gap-3 bg-zinc-800/90 p-4 w-[245px]">
             <img src={avatar} alt={`avatar_${index}`} className="w-[15%]" />
             <p className="text-zinc-400 text-xs text-start font-normal w-full">
               {description}

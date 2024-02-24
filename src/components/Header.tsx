@@ -43,16 +43,16 @@ export function Header() {
           </p>
 
           {/* Header Footer Features */}
-          <div className="flex flex-wrap justify-center items-center gap-8 mt-6">
+          <div className="md:flex flex-wrap justify-center items-center gap-8 mt-6">
             {features.map(({ icon, title, description }) => (
-              <div className="flex flex-col justify-center items-center gap-2.5 w-1/4">
+              <div className="flex flex-col justify-center md:mb-0 mb-6 items-center gap-2.5 md:w-1/4">
                 <div className="flex justify-center items-center bg-primary w-[40px] p-2 h-[40px] rounded-full">
                   {icon}
                 </div>
                 <h1 className="text-white text-base text-center font-semibold">
                   {title}
                 </h1>
-                <p className="text-zinc-400 text-xs text-center w-3/4">
+                <p className="text-zinc-400 text-xs text-center md:w-3/4 w-1/2">
                   {description}
                 </p>
               </div>

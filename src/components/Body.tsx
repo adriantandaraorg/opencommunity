@@ -21,18 +21,18 @@ export function Body() {
       </div>
 
       {/* Body Ilustrations */}
-      <div className="flex flex-col justify-center items-center mt-10 gap-10 w-1/2">
+      <div className="flex flex-col justify-center items-center mt-10 gap-10 lg:w-1/2 sm:w-2/3">
         {ilustrations.map(({ info, image }, index) => (
           <div
             key={index}
-            className={`flex justify-center items-center gap-10 ${
-              index % 2 === 0 ? "flex-row-reverse" : null
+            className={`flex justify-center items-center lg:gap-10 gap-5 ${
+              index % 2 === 0 ? "lg:flex-row-reverse" : null
             }`}
           >
             <img
               src={image}
               alt={`ilustration_${index + 1}`}
-              className="w-[50%]"
+              className="lg:w-[50%] w-[30%]"
             />
             <div className="flex flex-col justify-start items-start">
               <h2 className="text-primaryLight text-xs font-thin">
